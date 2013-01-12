@@ -13,7 +13,7 @@ find_path(WPILib_INCLUDE_DIR
 # Library
 find_library(WPILib_LIBRARY
 	NAMES ${WPILib_NAMES}
-	PATHS /usr/lib /usr/local/lib /usr/local/powerpc-wrs-vxworks/lib
+	PATHS /usr/lib /usr/local/lib /usr/local/powerpc-wrs-vxworks/lib /usr/powerpc-wrs-vxworks/lib
 	PATH_SUFFIXES ${WPILib_SUFFIXES}
 )
 
