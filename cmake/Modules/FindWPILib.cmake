@@ -1,12 +1,13 @@
 # CMake Find Module for WPILib by Matt Coffin
 
 # Common attributes
-set(WPILib_SUFFIXES wpilib)
+set(WPILib_SUFFIXES wpilib WPILib)
 set(WPILib_NAMES wpilib libwpilib)
 
 # Find includes
 find_path(WPILib_INCLUDE_DIR
 	NAMES WPILib.h
+	PATHS /usr/include /usr/local/include /usr/powerpc-wrs-vxworks/include /usr/local/powerpc-wrs-vxworks/include
 	PATH_SUFFIXES ${WPILib_SUFFIXES}
 )
 
